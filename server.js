@@ -39,7 +39,7 @@ app.post("/thanks", (req, res) => {
     to: process.env.CELL_PHONE_NUMBER,
     body:
       req.body.name +
-      ' requested to contact you about the following. "' +
+      ' has left you the following message. "' +
       req.body.message +
       '" Their email address is ' +
       req.body._replyto
