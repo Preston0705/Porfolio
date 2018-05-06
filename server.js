@@ -38,7 +38,7 @@ app.get('/contact', (req,res) => {
 
 
 app.post('/thanks', (req,res) => {
-    // console.log(req.body);
+    
     client.messages.create({
         from: process.env.TWILIO_PHONE_NUMBER,
         to: process.env.CELL_PHONE_NUMBER,
