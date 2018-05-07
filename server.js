@@ -2,7 +2,6 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const fs = require("fs");
-const secure = require('ssl-express-www');
 require("dotenv").load();
 
 const client = require("twilio")(
@@ -16,7 +15,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static(__dirname + "/styles"));
 app.use(express.static("public"));
-app.use(secure);
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
