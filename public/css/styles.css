@@ -177,6 +177,7 @@ footer {
   border: 3px solid #fff;
   border-radius: 30px;
   transition: 0.5s ease all;
+  margin-top: 30px;
 }
 .btn-rounded-white:hover {
   color: rgb(216, 178, 117);
@@ -229,7 +230,8 @@ footer {
   text-align: center;
 }
 #lead-content h1,
-#lead-content h2 {
+#lead-content h2,
+#lead-content h3 {
   margin: 0;
 }
 #lead-content h1 {
@@ -241,10 +243,14 @@ footer {
   line-height: 0.9em;
 }
 #lead-content h2 {
-  color: rgb(228, 227, 226);
+  color: rgb(247, 247, 247);
   font-weight: 500;
   font-size: 2.25em;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#lead-content h3 {
+  color:  rgb(247, 247, 247);
+  font-weight: 500;
 }
 #lead-overlay {
   position: absolute;
