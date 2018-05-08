@@ -704,7 +704,7 @@ footer {
   #contact-form {
     display: none;
   }
-  #contact h3 #contact a {
+  #contact a {
     display: block;
   }
 }
