@@ -559,6 +559,9 @@ footer {
   color: #fff;
   font-weight: 500;
 }
+#contact h3 {
+  color: #fff
+}
 #contact a {
   display: none;
 }
