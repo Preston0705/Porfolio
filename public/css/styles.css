@@ -561,7 +561,7 @@ footer {
 }
 #contact h3 {
   color: #fff;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 #contact a {
   display: none;
