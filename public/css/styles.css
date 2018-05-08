@@ -700,6 +700,9 @@ footer {
   #about p {
     text-align: left;
   }
+  #contact {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   header {
