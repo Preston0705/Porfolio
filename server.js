@@ -2,7 +2,6 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const fs = require("fs");
-var sslRedirect = require('heroku-ssl-redirect');
 require("dotenv").load();
 
 const client = require("twilio")(
