@@ -14,7 +14,6 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static(__dirname + "/styles"));
-app.use(sslRedirect());
 app.use(express.static("public"));
 app.set("views", "./views");
 app.set("view engine", "ejs");
