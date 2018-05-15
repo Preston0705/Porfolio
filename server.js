@@ -29,9 +29,9 @@ app.get("/", (req, res) => {
   res.render("./pages/index", data);
 });
 
-app.get("/contact", (req, res) => {
-  res.render("contact");
-});
+// app.get("/contact", (req, res) => {
+//   res.render("contact");
+// });
 
 app.post("/thanks", (req, res) => {
   const str = req.body.name;
