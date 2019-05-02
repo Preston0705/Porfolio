@@ -4,10 +4,10 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 require("dotenv").load();
 
-const client = require("twilio")(
-  process.env.TWILIO_ACCOUNT_SID,
-  process.env.TWILIO_AUTH_TOKEN
-);
+//const client = require("twilio")(
+//  process.env.TWILIO_ACCOUNT_SID,
+//  process.env.TWILIO_AUTH_TOKEN
+//);
 
 const app = express();
 app.use(morgan("combined"));
@@ -43,16 +43,16 @@ app.post("/thanks", (req, res) => {
     thanks: true,
     name: newString
   };
-  client.messages.create({
-    from: process.env.TWILIO_PHONE_NUMBER,
-    to: process.env.CELL_PHONE_NUMBER,
-    body:
-      newString +
-      ' has left you the following message. "' +
-      req.body.message +
-      '" Their email address is ' +
-      req.body._replyto
-  });
+  // client.messages.create({
+  //   from: process.env.TWILIO_PHONE_NUMBER,
+  //   to: process.env.CELL_PHONE_NUMBER,
+  //   body:
+  //     newString +
+  //     ' has left you the following message. "' +
+  //     req.body.message +
+  //     '" Their email address is ' +
+  //     req.body._replyto
+  // });
   res.render("pages/index", newData);
 });
 
