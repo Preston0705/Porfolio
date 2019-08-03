@@ -2,12 +2,12 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const fs = require("fs");
-require("dotenv").load();
+// require("dotenv").load();
 
-const client = require("twilio")(
- process.env.TWILIO_ACCOUNT_SID,
- process.env.TWILIO_AUTH_TOKEN
-);
+// const client = require("twilio")(
+//  process.env.TWILIO_ACCOUNT_SID,
+//  process.env.TWILIO_AUTH_TOKEN
+// );
 
 const app = express();
 app.use(morgan("combined"));
